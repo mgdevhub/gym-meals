@@ -1,0 +1,103 @@
+{
+  "expo": {
+    "name": "GymMeals",
+    "slug": "gym-meals",
+    "version": "1.0.2",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "userInterfaceStyle": "dark",
+    "scheme": "com.gymmeals.app",
+    "splash": {
+      "image": "./assets/images/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#121212"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "extra": {
+      "geminiApiKey": "",
+      "googleWebClientId": "DEMO-MODE-REPLACE-BEFORE-PRODUCTION.apps.googleusercontent.com",
+      "eas": {
+        "projectId": "gym-meals-project"
+      }
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.gymmeals.app",
+      "buildNumber": "2",
+      "usesAppleSignIn": true,
+      "infoPlist": {
+        "UIBackgroundModes": [],
+        "NSCameraUsageDescription": "Take photos of your food for AI calorie analysis.",
+        "NSPhotoLibraryUsageDescription": "Select food photos for AI calorie analysis.",
+        "NSPhotoLibraryAddUsageDescription": "Save food photos to your gallery.",
+        "ITSAppUsesNonExemptEncryption": false
+      },
+      "entitlements": {
+        "com.apple.developer.icloud-container-identifiers": [
+          "iCloud.com.gymmeals.app",
+          "iCloud.com.gymmeals.app"
+        ],
+        "com.apple.developer.ubiquity-container-identifiers": [
+          "iCloud.com.gymmeals.app",
+          "iCloud.com.gymmeals.app"
+        ],
+        "com.apple.developer.ubiquity-kvstore-identifier": "$(TeamIdentifierPrefix)com.gymmeals.app"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "backgroundColor": "#121212"
+      },
+      "package": "com.gymmeals.app",
+      "versionCode": 2,
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "blockedPermissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "RECORD_AUDIO",
+        "READ_CONTACTS",
+        "READ_SMS"
+      ],
+      "config": {
+        "googleMaps": {
+          "apiKey": ""
+        }
+      },
+      "usesCleartextTraffic": false
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff",
+          "dark": {
+            "backgroundColor": "#000000"
+          }
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "30d22e7f-cc51-446b-baf4-6f76a2f6ce4b"
+      }
+    }
+  }
+}
